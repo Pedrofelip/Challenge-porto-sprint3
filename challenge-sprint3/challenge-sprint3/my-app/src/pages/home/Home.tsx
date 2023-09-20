@@ -8,6 +8,7 @@ import caminhao from '../../assets/caminhao-vetor.png'
 import celular from '../../assets/vetor-celular-seta.png'
 import './Home.css'
 import '../../styles/Global.css'
+import { Link } from "react-router-dom"
 
 export const Home = () =>{
     return(
@@ -15,7 +16,7 @@ export const Home = () =>{
             <Header></Header>
             <section className="banner1">
                 <div className="grid_banner1">
-                    <a href="" className="btn_banner1">iniciar atendimento <img src={imgBtn} alt="" /></a>
+                    <Link className='btn_banner1' to='/solicitações'>iniciar atendimento <img src={imgBtn} alt="" /></Link>
                 </div>
             </section>
             <section className="banner2">

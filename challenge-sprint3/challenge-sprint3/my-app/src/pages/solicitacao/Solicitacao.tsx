@@ -98,16 +98,16 @@ export const Solicitacao = () => {
                             <div className="grid_legenda_form">
                             <div className="legenda_form">
                                 <img src={maps} alt="" />
-                                <p>Insira as informações do veículo baseado na documentação</p>
+                                <p>Insira as informações sobre a sua localização</p>
                             </div>
                             </div>
                             <div className="grid_inputs_lado_a_lado">
                                 <div className="grid_label_input1 tamanho_input3">
-                                    <label htmlFor="">Qual o motivo da solicitação?</label>
+                                    <label htmlFor="">Estado</label>
                                     <input type="text" name="" id="" />
                                 </div>
                                 <div className="grid_label_input1 tamanho_input3">
-                                    <label htmlFor="">Qual o motivo da solicitação?</label>
+                                    <label htmlFor="">Cidade</label>
                                     <input type="text" name="" id="" />
                                 </div>
                                 <div className="grid_label_input1 tamanho_input3">
