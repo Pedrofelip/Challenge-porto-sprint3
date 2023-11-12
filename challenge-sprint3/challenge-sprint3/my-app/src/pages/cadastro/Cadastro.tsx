@@ -11,6 +11,22 @@ export const Cadastro = () =>{
     const[apolice, setApolice] = useState("")
     const[placaVeiculo, setPlacaVeiculo] = useState("")
 
+
+    function Cadastrar() {
+        const dadosCadastro = {emailCadastro, senhaCadastro, cpf, apolice, placaVeiculo};
+
+        fetch('urlapi', {
+            method: 'POST',
+            headers: {"Cpntent-type" : "application/json"},
+            body: JSON.stringify(dadosCadastro)
+        }).then((resp) => resp.json())
+        .then((data) => {
+            console.log(data)
+            console.log('usuario cadastrado')
+        })
+        .catch((err) => console.log(err))
+    }
+
     const handleEmailCadastro = (event) =>{
         setEmailCadastro(event.target.value)
     }
@@ -30,6 +46,7 @@ export const Cadastro = () =>{
     const handlePlacaVeiculo = (event) =>{
         setPlacaVeiculo(event.target.value)
     }
+
     return(
         <>
             <Header></Header>
@@ -44,7 +61,7 @@ export const Cadastro = () =>{
                     <input type="text" placeholder="CPF" className="input_form" value={cpf} onChange={handleCpf}/>
                     <input type="text" placeholder="N da apólice" className="input_form" value={apolice} onChange={handleApolice}/>
                     <input type="text" placeholder="Placa do veículo" className="input_form" value={placaVeiculo} onChange={handlePlacaVeiculo}/>
-                    <button type="button" className="btn_form">cadastrar</button>
+                    <button type="button" className="btn_form" handleSubmit={Cadastrar}>cadastrar</button>
                 </form>
                 <p className="redirect_fomrs">Já possui uma conta? <Link to='/login'>Fazer login</Link></p>
             </section>

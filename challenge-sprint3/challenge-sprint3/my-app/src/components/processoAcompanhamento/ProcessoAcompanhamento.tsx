@@ -24,8 +24,8 @@ export const ProcessoAcompanhamento = (props) => {
                 <div className='grid_acompanhamento_txt'>
                     <h2>Descrição da atual solicitação</h2>
                     <div className='grid_txts_info'>
-                        {props.arrayInfos.map((card) => (
-                            <div className='card_txt_info'>
+                        {props.msnAcompanhamento.map((card) => (
+                            <div className='card_txt_info' key={card.id}>
                             <div className='data_card'>
                                 <p>{card.data}</p>
                                 <p>{card.hora}</p>
