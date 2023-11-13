@@ -10,7 +10,7 @@ export const Acompanhamento = () =>{
     const [msnAcompanhamento, setMsnAcompanhamento] = useState([])
 
     useEffect(() => {
-        fetch('urlapi', {
+        fetch('http://localhost:3000/solicitacao', {
             method: 'GET',
             headers: {
                 'Content-type' : 'application/json'
