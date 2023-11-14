@@ -2,6 +2,8 @@ import "../../styles/Global.css";
 import "./ProcessoAcompanhamento.css";
 
 export const ProcessoAcompanhamento = (props) => {
+
+
   return (
     <section className="fundo_acompanhamento">
       <div className="grid_acompanhamento">
