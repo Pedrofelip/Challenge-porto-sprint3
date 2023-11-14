@@ -30,7 +30,7 @@ export const Acompanhamento = () =>{
     return(
         <>
             <Header></Header>
-            <ProcessoAcompanhamento numSolicitão="2612" solicitado={msnAcompanhamento.passo1} aCaminho={msnAcompanhamento.passo2} rebocado={msnAcompanhamento.passo3} arrayInfos = {msnAcompanhamento}/>
+            <ProcessoAcompanhamento numSolicitão="2612" solicitado={true} aCaminho={true} rebocado={false} arrayInfos = {msnAcompanhamento}/>
         </>
     )
 }
