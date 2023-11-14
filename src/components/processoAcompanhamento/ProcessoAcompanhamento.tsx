@@ -1,7 +1,7 @@
 import "../../styles/Global.css";
 import "./ProcessoAcompanhamento.css";
 
-export const ProcessoAcompanhamento = (props) => {
+export const ProcessoAcompanhamento = (props : any) => {
 
 
   return (
@@ -43,7 +43,7 @@ export const ProcessoAcompanhamento = (props) => {
         <div className="grid_acompanhamento_txt">
           <h2>Descrição da atual solicitação</h2>
           <div className="grid_txts_info">
-            {props.arrayInfos.map((card) => (
+            {props.arrayInfos.map((card : any) => (
               <div className="card_txt_info" key={card.solicitacao_id}>
                 <div className="data_card">
                   <p>{card.data}</p>

@@ -1,7 +1,7 @@
 import '../../styles/Global.css'
 import './Card_integrantes.css'
 
-export const Card = (props) => {
+export const Card = (props : any) => {
     return(
         <article className='fundo_card'>
             <div className='grid_card'>

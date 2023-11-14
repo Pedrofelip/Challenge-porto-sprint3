@@ -8,11 +8,11 @@ export const Login = () => {
     const[emaiLogin, setEmailLogin] = useState("")
     const[senhaLogin, setSenhaLogin] = useState("")
 
-    const handleEmailLogin = (event) =>{
+    const handleEmailLogin = (event : any) =>{
         setEmailLogin(event.target.value)
     }
 
-    const handleSenhaLogin = (event) =>{
+    const handleSenhaLogin = (event : any) =>{
         setSenhaLogin(event.target.value)
     }
     return (

@@ -35,23 +35,23 @@ export const Cadastro = () =>{
         .catch((error) => console.log(error))
     }
 
-    const handleEmailCadastro = (event) =>{
+    const handleEmailCadastro = (event : any) =>{
         setEmailCadastro(event.target.value)
     }
 
-    const handleSenhaCadastro = (event) =>{
+    const handleSenhaCadastro = (event : any) =>{
         setSenhaCadastro(event.target.value)
     }
 
-    const handleCpf = (event) =>{
+    const handleCpf = (event : any) =>{
         setCpf(event.target.value)
     }
 
-    const handleApolice = (event) =>{
+    const handleApolice = (event : any) =>{
         setApolice(event.target.value)
     }
 
-    const handlePlacaVeiculo = (event) =>{
+    const handlePlacaVeiculo = (event : any) =>{
         setPlacaVeiculo(event.target.value)
     }
 
