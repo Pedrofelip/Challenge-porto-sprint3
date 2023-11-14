@@ -108,3 +108,25 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 414px){
+    .secao_form {
+        height: 750px;
+    }
+
+    .tit_secao_form > h1{
+        font-size: 25px;
+    }
+    
+    .tit_secao_form > hr{
+        border: 1px solid black;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .fundo_form_cadastro{
+        width: 80%;
+        height: 550px;
+    }
+
+}
+
