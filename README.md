@@ -16,3 +16,6 @@ Com a redução dos erros na escolha do modal, a segurança dos profissionais en
 INSTRUÇÕES DE INTALAÇÃO:
 - No terminal do git bash da pasta "my-app" dar o comando "npm install" para baixar as node modoles que faram com que o projeto funcione
 - Logo em seguida no mesmo terminal dar o comando "npm run dev" para o projeto começar a rodar gerar a url
+- caso vc queira testar o projeto sem ser com o vercel e sim rodando local não esqueçã de verificar o cors na api que vc esta consultando, veja se ela esta pemitindo aquela porta onde esta rodando seu front fazer consultas nela
+
+link do vercel: https://challenge-porto-sprint4.vercel.app/
